@@ -4,11 +4,8 @@ pipeline {
     stages {
         stage('NPM Install') {
             steps {
-                script {
-                    notifyBitbucket(buildStatus: 'INPROGRESS')
-                }
                 sh 'cd jenktest'
-                sh 'npm install'
+                    sh 'npm install'
             }
         }
         stage('Build') {
