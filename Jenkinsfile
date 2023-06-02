@@ -5,6 +5,7 @@ pipeline {
         stage('NPM Install') {
             steps {
                 sh 'cd jenktest'
+                    sh 'pwd'
                     sh 'npm install'
             }
         }
